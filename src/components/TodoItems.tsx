@@ -25,8 +25,8 @@ function TodoItems({ todo }: todoProps) {
 
     }
   };
-  const completeHandle = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e);
+  const completeHandle = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(event.target.checked);
     completeTodo(todo.id);
   };
   return (
